@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+    ScrollReveal({ duration: 1000 })
+  </script>
+  <script src="main.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark smoothScroll" id="smooth">
+    <div class="container-fluid">
+      <a class="navbar-brand col glow" href="#" style="font-size: xx-large; padding-left: 1rem;">Sachin</a>
+      <div class="collapse navbar-collapse container " id="navbarNavAltMarkup">
+        <div class="navbar-nav" style="margin-left: 40rem; ">
+          <a class="nav-link " style="margin-left: 4rem; " aria-current="page" href="#about">About</a>
+          <a class="nav-link " style="margin-left: 4rem;" href="#skills">Skills</a>
+          <a class="nav-link " style="margin-left: 4rem; " href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="box X">
+    <div class="img-container">
+      <img src="avatar2.jpg" class="avatar2" alt="">
+    </div>
+    <p class="intro"><span class="i">Hello! Everyone</span> <br><span class="i">My Name is </span><b><span class="i" style="color: rgba(0, 255, 21, 0.13);">Sachin.</span></b> </p>
+  </div>
+  <!--ABOUT-->
+  <div class="X">
+    <div class="about X" id="about">
+      <u>About</u>
+    </div>
+    <div>
+      <img src="programmer.jpeg" class="programmer X">
+    </div>
+    <div class="aboutintro X">I am a fast paced learner. I am good in problem solving.<br> I am always hungry to learn new
+      things.
+      I like to play table tennis , Volleyball etc .</br> I am a full stack developer. </div>
+
+  </div>
+  <!--SKILLS-->
+  <div class="X">
+    <div class="about skills X" id="skills">
+      <u>Skills</u>
+    </div>
+    <div>
+      <img src="skills1.jpg" class="skillspic X" alt="">
+    </div>
+    <div class="aboutintro X">
+      I am a Programmer. I can code in C , C++ , Python and Java as well . <br>I learned HTML , CSS and JavaScript
+      .</br><br>
+      I am also familiar with bootstrap . I have made a Project on Automatic Text Summarizer using NLP (Natural language
+      Processing)</br>
+      and Flask Framework.
+
+    </div>
+  </div>
+  <!--CONTACT-->
+  <div class="X">
+    <div class="about X" id="contact">
+      <u>Contact Form</u>
+    </div>
+    <div class="container1 X">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <div class="input-container X">
+          <label for="Email">Email Address</label>
+          <input class="input-field" type="text" placeholder="Email" name="email">
+        </div>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <!--FOOTER-->
+  
+  <div class="fc bg-dark">
+    <div class="d-flex flex-row bd-highlight mb-3 fr" style="padding: 2rem;">
+      <div class="col-6" style="margin-left: 1rem;">
+        <a href="https://www.facebook.com/1999.luckisme/" target="_blank" class="fa fa-facebook" style="margin-left: 1rem;"></a>
+        <a href="https://www.instagram.com/sachin_jaihind_/" target="_blank"class="fa fa-instagram" style="margin-left: 1rem;"></a>
+        <a href="https://www.linkedin.com/in/sachin-thakur-code/" target="_blank" class="fa fa-linkedin" style="margin-left: 1rem;"></a>
+      </div>
+      
+      <div class="col-3 text-white" style="text-align: center ;">
+        <p> Created by Sachin © 2021</p>
+        <p>All right reserved</p>
+      </div>
+      <div class="col-3 text-white text-center" style="padding-top: 1rem;">
+        <a style="margin-left: 2rem; padding-top: 1rem; text-decoration:none; color: white;" href="#smooth">Top</a>
+        <a style="margin-left: 2rem; text-decoration:none; color: white;" href="#skills">Skills</a>
+        <a style="margin-left: 2rem; text-decoration:none; color: white;" href="#about">About</a>
+      </div>
+
+
+    </div>
+
+  </div>
+  <script>
+    ScrollReveal().reveal('.img-container',{ delay: 1000 });
+    ScrollReveal().reveal('.i', { interval: 200 });
+    ScrollReveal().reveal('.X', {
+	interval: 200,
+	reset: true});
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
